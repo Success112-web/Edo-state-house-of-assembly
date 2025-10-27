@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #a1ea66 0%, #79a24b 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            padding: 40px;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 2em;
+            margin-bottom: 25px;
+            line-height: 1.3;
+            border-bottom: 3px solid #55d855;
+            padding-bottom: 15px;
+        }
+
+        .details {
+            color: #56684a;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .exit-btn {
+            background: linear-gradient(135deg, #7cea66 0%, #64a24b 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(144, 234, 102, 0.4);
+            font-weight: 600;
+        }
+
+        .exit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(124, 234, 102, 0.6);
+        }
+
+        .exit-btn:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .details {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>EDHA Passes Resolution to Curb Incessant Killings and Kidnappings in Edo State</h1>
+        
+        <p class="details">
+   The Edo State House of Assembly has passed a resolution aimed at tackling the rising spate of killings and kidnappings across several constituencies in the state.
+‎
+‎The resolution followed a motion of urgent public importance moved by Hon. Kingsley Ugabi, member representing Etsako East Constituency, who expressed deep concern over the escalating insecurity in Okpella, Agenebode, and surrounding areas. He revealed that eight officers of the NSCDC and a village head were recently killed, while four others sustained severe injuries during an encounter with kidnappers. Hon. Ugabi appealed to security agencies to act swiftly in restoring peace to the affected communities.
+‎
+‎Supporting the motion, Hon. Addeh Isibor, representing Esan North-East I Constituency who doubles as the Deputy Majority Leader, stressed the need for competent leadership in the state’s security apparatus. He advocated the appointment of the most capable officers from the police or military to head the Edo State Security Corps. He further urged security operatives to investigate individuals who suddenly acquire unexplained wealth, cautioning society against celebrating such trends. He also encouraged community members to cooperate with law enforcement agencies by providing timely intelligence.
+‎
+‎Also lending her voice, Hon. Maria Edeko, member representing Esan North-East II Constituency, called on security agencies to monitor herbal drink hawkers, popularly known as “Agbo sellers”, alleging that many of them clandestinely distribute dangerous and banned substances to criminals.
+‎
+‎Other lawmakers, including Hon. Charity Aiguobarueghian (Ovia North-East I) and Hon. Sunny Ojiezele (Esan South-East), also spoke in support of the consequential motion, which was later amended by the House before adoption.
+
+Summing up ,‎Speaker , Edo State House of Assembly,Rt Hon Chief Blessing Sheriff Agbebaku directed the Nigeria Police and other Security agencies who benefited from the Governor Okpebholo’ s Hilux donation to as a matter of urgency use it for patrols across the state and not for other purposes.
+
+This according to The Speaker is to boost security and curb incessant kidnapping and Killings of the people.
+
+Also at plenary ,the House received two letters from Governor Monday Okpebholo. The first, dated August 21, 2025, requested the confirmation of Barr. Aiyo-Aigie Godswill as a replacement for Mrs. Monica Igbadumhen as a member of the Edo State Civil Service Commission.
+‎
+‎ The second, dated September 1, 2025, sought the confirmation of Hon. Barr. Osikhena Boih Donald as Chairman, alongside six nominees as members of the Edo State Law Reform Commission. Both letters were referred to the House Committee on Rules, Business, and Government House for screening and further consideration.
+‎
+‎The House also sent a message of Felicitation to the APC State Chairman, Emperor Jarrett Tenebe on the occasion of his Birthday Celebration.
+
+The House thereafter adjourned sitting to Tuesday, September 9, 2025.
+
+        </p>
+
+        <a href="news.html" class="cta-button">Go back</a>
+    </div>
+
+    <script>
+        function handleExit() {
+            if (confirm('Are you sure you want to exit?')) {
+                window.close();
+                
+                // Fallback if window.close() doesn't work
+                setTimeout(() => {
+                    window.location.href = 'about:blank';
+                }, 100);
+            }
+        }
+    </script>
+</body>
+</html>

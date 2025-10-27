@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edo Assembly Speaker Honored</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #a1ea66 0%, #79a24b 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            padding: 40px;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #2d3748;
+            font-size: 2em;
+            margin-bottom: 25px;
+            line-height: 1.3;
+            border-bottom: 3px solid #55d855;
+            padding-bottom: 15px;
+        }
+
+        .details {
+            color: #56684a;
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .exit-btn {
+            background: linear-gradient(135deg, #7cea66 0%, #64a24b 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(144, 234, 102, 0.4);
+            font-weight: 600;
+        }
+
+        .exit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(124, 234, 102, 0.6);
+        }
+
+        .exit-btn:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .details {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Edo Assembly Speaker Honored with Platinum Leadership Award</h1>
+        
+        <p class="details">
+        Speaker, Edo State House of Assembly,Rt Hon Chief Blessing Sheriff Agbebaku has been honored with a Platinum leadership Award at the Installation of Rotary Club of Benin Metropolitan President, Rtn Rt Hon Chief Mrs Elizabeth Ativie a former Speaker of the Edo State House of Assembly.
+
+The Installation of the Rt Hon Chief Mrs Elizabeth Ativie attracted dignitaries including Pastor Osagie Ize -Iyamu,First lady Mrs Edesili Anani, Women Affairs and social Development Commissioner Barr Bisi Idaomi, the Chancellor Mudiame University Irrua and CEO of Mudiame International Limited, Prof. Sunny Eboh Eromonsele and other dignitaries within and outside the Rotary Family.
+
+In her Address,Rt Hon Ativie explained that Rotary Club of Benin Metropolitan is a non-profit making Organization which has its foundation on giving to society for an even development and growth.
+
+Rtn Ativie said the club has various areas of it has invested to make life better for target groups which include Basic Education,Literacy,Disease prevention, Treatment and Eradication of Polio ,water hygiene, Sanitation, Maternal and Child health amongst other areas of making life more meaningful to all.
+
+High point was the installation of Rtn Ativie as the 20th President of the club and presentation of Platinum,Gold and posthumous awards to recipients from all walks of life.
+
+The Speaker reiterated his Commitment towards partnering with organisations like Rotary Club to give the people better development and sustainability.
+
+The Speaker Rt Hon Chief Blessing Sheriff Agbebaku was represented at the event by the Chief of Staff to the Speaker,Sir ODK Iruobe Ksc, Special Adviser to the Speaker on Protocol and Travels Mr Chiaka Ogaraku and Special Adviser on Media to the Speaker Mrs Ivy Ebojele.
+        </p>
+
+        <a href="news.html" class="cta-button">Go back</a>
+    </div>
+
+    <script>
+        function handleExit() {
+            if (confirm('Are you sure you want to exit?')) {
+                window.close();
+                
+                // Fallback if window.close() doesn't work
+                setTimeout(() => {
+                    window.location.href = 'about:blank';
+                }, 100);
+            }
+        }
+    </script>
+</body>
+</html>
